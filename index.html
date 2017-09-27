@@ -1,35 +1,56 @@
 <!doctype html>
-<head>
-	<title>자바스크립트 실습</title>
-	<style>
-	input{font-size: 1em;}
-	button{font-size: 1em;}
-	body{font-size: 2em;}
-	</style>
-</head>
-
 <body>
-	<h1 id="display">당신의 표준체중을 알아보세요!</h1>
-	체중<input type="text" id="weight" placeholder="당신의 체중을 입력하세요.">kg
-	<br>키<input type="text" id="height" placeholder="당신의 키를 입력하세요.">cm
-	<br><button id="action">계산하기</button>
+	<title>책벌레_계획</title>
+<body>
+	<br><br>
+	<h1>해결사 통역벌레</h1>
+	<br><br><br><br><br><br>
+	<h2>짧은 이야기</h2>
+	<img src="통역벌레.jpg">
+	<p><책을 먹고 사는 책벌레들의 세상>
+		<br><br>책벌레는 애벌레일 때 먹고 자란 책에 따라 사용하는 언어가 달라진다. <br>크기가 작고 어두울 때 주로 활동해 발견이 쉽지 않지만, 빛이 나는 아름다운 <br>날개와 돋보기처럼 생긴 더듬이를 가지고 있어 다른 벌레와 구분하기 쉽다. <br>주로 서식하는 곳은 도서관, 서점 등이며 책이 많은 가정의 책장이나 고서가 <br>보관된 박물관 등에서도 찾아볼 수 있다.
+	</p>
+	<br><br>
+	<h2>배경</h2>
+	<br><img src="도서관.jpg">
+	<p>도서관</p>
+	<br><br>
+	<h2>분위기</h2>
+	<br><img src="분위기.jpg">
+	<p>따뜻하고 편안한 분위기</p>
+	<br><br>
+	<h2>타겟</h2>
+	<br><img src="관람등급.jpg">
+	<p>전체이용가. 어린이 대상이나 어른도 즐길 수 있게.</p>
+	<br><br>
+	<h2>의도</h2>
+	<p>자바스크립트를 통해 일러스트에 간단한 애니메이션을 적용하여 보는이의 관심과 집중도를 높인다.
+		<br>(예시:네이버 웹툰 '고고고')
+		<br><img src="구구.gif"><img src="다행이다.gif">
+	</p>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><h3>감사합니다.</h3><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<p1>디지털 퍼블리싱2_2014286007_김가영_책벌레 세상 기획</p1>
+	<br><br><br><br><br><br><br>
+	
 
-	<script>
-		action.onclick=function(){
-			console.log("OK");
-			var myWeight=weight.value;
-			var myHeight=height.value;
-			standardWeight(myWeight,myHeight);
-		}
 
-		function standardWeight(weight, height){
-		var standardWeight=(height-100)*0.9;
-		var dietWeight=weight-standardWeight;
-		var fatRate=(weight/standardWeight)*10;
-		var Text="당신의 표준체중은" + standardWeight +"kg 입니다. 따라서 당신은" + dietWeight + "kg을 감량해야 합니다." + "현재 비만도는" + fatRate + "%입니다.";
-		display.innerHTML=Text;
-}
-
-	</script>
+	
 </body>
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css">
+<style>
+*{font-family: 'Jeju Gothic'; }
+h2{text-decoration: underline;}
+  body{ width: 600px; 
+      margin: 0 auto; 
+      padding-left: 1em; 
+      padding-right: 1em; 
+      margin-top: 100px;
+      font-weight: lighter;
+  }
+p {letter-spacing:-0.6px;
+	line-height: 1.7;
+	font-size:0.9em;
+}
+p1{font-size: 0.7em;}
 
+</style>
